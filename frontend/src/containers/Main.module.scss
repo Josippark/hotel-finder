@@ -1,0 +1,46 @@
+@import "../assets/styles.scss";
+
+.Main{
+    background-image: linear-gradient(to right, #98a9a1b3,rgba(201, 238, 227, 0.7)), url('../assets/images/bg1.jpg');
+    width:100vw;
+    height:100vh;
+    background-size: cover;
+    position: relative;
+    background-position: bottom;
+
+ }
+ .Search{
+ }
+
+.Card-wrapper{
+    top:18rem;
+    width:100vw;
+    height:50vh;
+    position: absolute;
+   
+}
+.Button-logout {
+    color:white;
+    background-color: red;
+    padding:.3rem;
+    width:6rem;
+    border-radius:1rem;
+
+}
+.SignOut{
+    position:absolute;
+    left:95%
+}
+
+
+@media(min-width:110rem){
+    .SignOut{
+        left:90%
+    }
+}
+
+@media(max-width:80rem){
+    .SignOut{
+        left:85%
+    }
+}

@@ -1,0 +1,117 @@
+@import "../../assets/styles.scss";
+
+.Card{
+    background-color: $bg-card-color;
+    width:17rem;
+    height:25rem;
+    margin:2rem;
+    color:$color-grey;
+    box-shadow: 3px 10px 10px 2px rgba($color-grey, 0.45);
+    box-sizing: border-box;
+    z-index: 1;
+    position: relative;
+    
+
+
+
+    &__header{ 
+        height: 50%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__image{
+        position: relative;
+        box-shadow: 3px 10px 10px 2px rgba($color-black, 0.45);
+        width: 90%;
+        height: 90%;
+        margin-top:.2rem;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%)
+    }
+
+    &__heading{
+        margin-top:1rem;
+        text-align: center;
+        height:10%;
+        font-weight: bold;
+    }
+    
+    &__left-info{
+        width:50%;
+        margin-left:1rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; 
+    }
+    
+    &__right-info{
+        text-transform: uppercase;   
+        width:50%;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+    
+    
+    }
+    
+    &__right-small-info{
+        width: 100%;
+        height: 30%;
+        font-size:1.5rem; 
+    }
+    
+    &__left-small-info{
+        width: 50%;
+        height: 50%;
+    }
+    
+    &__content{
+        display:flex;
+        height:40%;
+        margin-top:1rem;
+    }
+    &__availability-text{
+        align-self: center
+    }
+    &__availability-green{
+        box-sizing: border-box;
+        position: relative;
+        left:9rem;
+        bottom:4.7rem;
+        box-shadow: 3px 5px 5px 2px rgba($color-black, 0.10);
+        background-color: greenyellow;
+        width:9rem;
+        height:2rem;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: .2rem;
+        display: flex;
+    }
+
+    &__availability-red{
+        box-sizing: border-box;
+        position: relative;
+        left:9rem;
+        bottom:4.7rem;
+        box-shadow: 3px 5px 5px 2px rgba($color-black, 0.10);
+        background-color: red;
+        width:9rem;
+        height:2rem;
+        color:white;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        letter-spacing: .16rem;
+        display: flex;
+        
+        
+    }
+}
+
+.rating{
+    opacity: 0.8;
+    margin-top:.5rem;
+}

@@ -1,0 +1,33 @@
+@import "../../assets/styles.scss";
+
+
+.Heading-main{
+    padding-top:5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.15rem;
+    color:$color-white;
+
+    text-align: center;
+    font-weight: 200;
+    font-size:3rem;
+    margin:0;
+}
+
+@media(max-width:100rem){
+    .Heading-main{
+        padding-top:5rem;
+        text-transform: uppercase;
+        
+        letter-spacing: .5rem;
+        color:$color-white;
+    }
+}
+@media(max-width:80rem){
+    .Heading-main{
+        padding-top:5rem;
+        text-transform: uppercase;
+
+        letter-spacing: 0rem;
+        color:$color-white;
+    }
+}

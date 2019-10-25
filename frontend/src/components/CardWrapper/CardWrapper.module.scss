@@ -1,0 +1,27 @@
+.Card-wrapper{
+ 
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+
+.Card-carousel{
+
+    position: relative;
+    
+    &__button-left{
+        position: absolute;
+        top:50%;
+        left: 0;
+    }
+
+    &__button-right{
+        position: absolute;
+        right:0;
+        top:50%;
+
+    }
+
+}

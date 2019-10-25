@@ -1,0 +1,113 @@
+@import "../../assets/styles.scss";
+
+.Search{
+    position: absolute;
+    top:30%;
+    left:50%;
+    width:35%;
+    
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    transform: translate(-50%,-50%);
+
+    &__input {
+        width:100%;
+        height:2rem;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10rem;
+        padding:0;
+        margin:0;
+        position:relative;
+        box-sizing:border-box;
+        padding:.25rem;
+        color:$search-input-text-color;
+        text-align:center;
+        border:none;
+    }
+    &__input:focus{
+        outline:none;
+    }
+    &__input-wrapper{
+        position:relative;
+        box-sizing:border-box;
+        
+    }
+    &__input-wrapper::before{
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin:-3px;
+        border-radius:  10rem;
+        background: linear-gradient(to right,rgb(130, 139, 137),rgb(177, 182, 175));   
+    }
+    
+    &__button-wrapper{
+        margin-top:2rem;
+    }
+    &__button{
+        font: inherit;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        border-radius:  10rem;
+        padding:.7rem;
+        width:8rem;
+        background-color:#a8b8ad;
+        background-size: 200% auto;
+        color:#FFF;
+        font-family: inherit;
+        letter-spacing: .1rem;
+        border:none;
+        font-size:.9rem;
+    } 
+    &__button:hover{
+        cursor: pointer;
+        outline:none;
+        background-color:$button-bg-color;
+        transition: .3s;
+        transform:translateY(.05rem);
+        box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.2);    
+    }
+    &__button:focus{
+        outline:none;
+        animation: buttonClick .5s ease-out;
+        background-position: right center;
+        transition:2s;
+    }
+
+}
+.Button-logout{
+    position:absolute;
+    top:-40%;
+    left:45%
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+
+@keyframes buttonClick{
+    0%{
+        transform:translateY(.1rem);
+        box-shadow: none;
+    }
+    100%{
+        transform:translateY(.05rem);
+        box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media(max-width:80rem){
+    .Search{
+        width:50%
+    }
+}
